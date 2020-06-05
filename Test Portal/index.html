@@ -5,48 +5,84 @@
 	<script type="text/javascript" src="assets/js/lib/jquery-2.1.4.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div id="container">
-		<h1>Questions<i class="fa heading fa-plus"></i></h1>
+		<h1>Questions<i class="fa fa-plus"></i></h1>
 		<ol>
 			<li>
 				<div id="node">
 				<div class="ques">
-					<input type="text" placeholder="Write your question here"><span>C</span>
+					<input type="text" placeholder="Write your question here"><button type="button" class="ques-clear">CLR</button>
 				</div>	
 					<div class="options">
 						<ol>
-							<li><span>O</span> Option1 <span>C</span> <span>X</span></li>
-							<li><span>O</span> Option2 <span>C</span> <span>X</span></li>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 1"> 
+								 <button type="button" class="clear">CLR</button> 
+								 <span><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 2"> 
+								 <button type="button" class="clear">CLR</button>
+								 <span><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 3">
+								 <button type="button" class="clear">CLR</button> 
+								 <span><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 4"> 
+								 <button type="button" class="clear">CLR</button> 
+								 <span><i class="fa trash fa-trash"></i></span>
+							</li><br>
 						</ol>
-						<input type="text" placeholder="Add option here"><i class="fa fa-plus"></i>
+						<button type="button" class="add"> Add Answer Option </button>
 					</div>
 					<div class="footer">
-						<span>X</span>
-						<span>S</span>
+						<button type="button" class="delete"><i class="fa fa-trash"></i> DEL</button>
+						<button type="button" class="save"><i class="fa fa-save"></i> Save</button>
 					</div>
 				</div>
 			</li>
-			<!--<li>
+			<li>
 				<div id="node">
 				<div class="ques">
-					<input type="text" placeholder="Write your question here"><span>C</span>
-				</div>
+					<input type="text" placeholder="Write your question here"><button type="button" class="ques-clear">CLR</button>
+				</div>	
 					<div class="options">
-						<input type="text" placeholder="Add option here"><i class="fa fa-plus"></i>
 						<ol>
-							<li>Option1 <span>C</span> <span>X</span></li>
-							<li>Option2 <span>C</span> <span>X</span></li>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 1"> 
+								 <button type="button" class="clear">CLR</button> 
+								 <span><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 2"> 
+								 <button type="button" class="clear">CLR</button>
+								 <span><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 3">
+								 <button type="button" class="clear">CLR</button> 
+								 <span><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 4"> 
+								 <button type="button" class="clear">CLR</button> 
+								 <span><i class="fa trash fa-trash"></i></span>
+							</li><br>
 						</ol>
+						<button type="button" class="add"> Add Answer Option </button>
 					</div>
 					<div class="footer">
-						<span>X</span>
-						<span>S</span>
+						<button type="button" class="delete"><i class="fa fa-trash"></i> DEL</button>
+						<button type="button" class="save"><i class="fa fa-save"></i> Save</button>
 					</div>
 				</div>
-			</li>-->
+			</li>
 		</ol>
 	</div>
 
