@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Creator</title>
+	<script type="text/javascript" src="assets/js/lib/jquery-2.1.4.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/C1style.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbaricons">
+            <ul>
+                <li id="icon1">Tarun <span id="caste">DIXIT</span><span id="namenot"><img src="Images/Ellipse%2045.png"></span></li>
+                <li id="icon2"><button id="button1"><img src="Images/icons8-gear-100.png" id="gear"></button></li> 
+                <li id="icon3"><button id="button2"><img src="Images/icons8-notification-100.png" id="bell"></button><span id="bellnot"><img src="Images/Ellipse%2045.png"></span></li> 
+                <li id="icon4"><button id="button3"><img src="Images/icons8-logout-rounded-down-100.png" id="logout"></button></li> 
+            </ul>
+
+        </div>
+    </div>
+    <div id="sidebar">
+        <img id="brandname" src="Images/monktree%20white.png">
+        <div id="list1">
+            <ul>
+                <li><a href="./creator1.html"><i class="fa fa-plus-circle"></i> Create a test</a></li>
+                <li><a href="./view.html"><i class="fa fa-list-alt"></i> View Tests</a></li>
+                <li><a href="./results.html"><i class="fa fa-signal"></i>  Results</a></li>
+            </ul>
+        </div>
+
+        <hr id="hrline">
+        
+        <div id="list2">
+            <ul>
+                <li><a href="#">Discussion</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Report</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="container">
+        <div id="box">
+            <div class="header">
+            <ol>
+                <li>Name this Test
+                    <br>
+                    <input type="text" placeholder="Test name">
+                </li>
+                <br>
+                <li>Choose the theme
+                    <br><br>
+                    <button type="button" class="theme">Physics</button>
+                    <button type="button" class="theme">Chemistry</button>
+                    <button type="button" class="theme">Mathematics</button>
+                </li>
+                <br>
+                <li>Default time for each question
+                    <br><br>
+                    <div class="dropdown">
+                        <button class="dropbtn">30 secs</button>
+                        <div class="dropdown-content">
+                          <a href="#">10 seconds</a>
+                          <a href="#">20 seconds</a>
+                          <a href="#">30 seconds</a>
+                          <a href="#">1 minute</a>
+                          <a href="#">5 minutes</a>
+                        </div>
+                      </div>
+                </li>
+                <br>
+                <li>Score for each question
+                    <br>
+                    <input type="text" placeholder="Score">
+                </li>
+            </ol>
+            </div>
+            <div class="footer">
+                
+                <a href="./view.html"><button type="button" class="cancel">Cancel</button></a>
+                <a href="./creator2.html"><button type="button" class="next">Next</button></a>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
