@@ -1,0 +1,360 @@
+html{
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+body{
+    font-family: Roboto;
+}
+
+#navbar{
+    height: 50px;
+    width: 1700px;
+    background-color: white;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    box-shadow: 1px 1px 12px 1px grey;
+}
+
+#navbaricons{
+    position: absolute;
+    left: 1235.1px;
+    top: -40px;
+}
+
+#navbaricons ul li{
+    display: inline;
+    border-right: 1px solid grey;
+}
+
+#button1{
+    width: 45px;
+    height: 44px;
+    position: relative;
+    background-color: white;
+    border: 1px;
+    padding-left: 0px;
+    left: -9px;
+    top: 23px;
+    margin-right: 2px;
+    
+}
+#button1:hover{
+    cursor: pointer;
+}
+
+#caste{
+    margin-right: 13px;
+    font-weight: bold;
+}
+
+#button2{
+    width: 45px;
+    height: 40px;
+    position: relative;
+    top: 19px;
+    left: -4px;
+    background-color: white;
+    border: 1px;
+    margin: none;
+    padding-left: 0px;
+    
+}
+#button2:hover{
+    cursor: pointer;
+
+}
+#button3{
+    width: 45px;
+    height: 43px;
+    position: relative;
+    top: 17px;
+    background-color: white;
+    border: 1px;
+    margin: none;
+    padding-left: 0px;
+    
+}
+#button3:hover{
+    cursor: pointer;
+}
+#gear{
+    width: 55px;
+    height: 55px;
+}
+#bell{
+    width: 50px;
+    height: 45px;
+    
+}
+#logout{
+    width: 45px;
+    height:45px;
+
+}
+#bellnot{
+    position: absolute;
+    left: 225px;
+    top: 44px;
+    z-index: 2;
+    
+}
+#namenot{
+    position: absolute;
+    top: 45px;
+    left: 115px;
+    z-index: 2;
+    
+}
+
+#icon2{
+    margin-left: 5px
+}
+#icon3{
+    margin-right: 5px
+}
+
+#sidebar{
+    position: relative;
+    width: 300px;
+    height: 1000px;
+    background-color: #324370;
+    z-index: 2;
+    top: -60px;
+    left: -8px;
+    
+}
+
+#brandname{
+    width: 160px;
+    height: 36px;
+    position: absolute;
+    left: 60px;
+    top: 80px
+    
+}
+
+#list1{
+    position: absolute;
+    top: 150px;
+    left: -70px
+   
+}
+
+#list1 ul{
+    list-style: none;
+    
+}
+
+#list1 ul li{
+    margin-bottom: 15px;
+    width: 320px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+       
+}
+
+ #list1 ul li a{
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+     font-family: roboto;
+     font-size: 15px;
+     display: block;
+      
+ }
+ #list1 ul li:hover{
+     background: linear-gradient(to left ,#FF0A71,#FFB906);
+ }
+
+ #hrline{
+    position: absolute;
+    top: 350px;
+    width: 298px;
+}
+
+#list2{
+    position: absolute;
+    top: 400px;
+    left: -70px
+    
+}
+#list2 ul{
+    list-style: none;
+}
+#list2 ul li{
+    margin-bottom: 15px;
+    width: 320px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    
+   
+}
+
+#list2 ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: roboto;
+    font-size: 15px;
+    display: block;
+     
+}
+#list2 ul li:hover{
+    background: linear-gradient(to left ,#FF0A71,#FFB906);
+}
+
+#container{
+    position: relative;
+    width: 1235px;
+    height: 690px;
+    left: 294px;
+    bottom: 1000px;
+    
+}
+
+#box{
+	width: 700px;
+	height: auto;
+    margin: 100px auto;
+    display: grid;
+	grid-template-rows: auto 35px;
+	background-color: white;
+	box-shadow: 1px 1px 20px 4px #acacbd;
+}
+
+.header input{
+	font-size: 15px;
+	box-sizing: border-box;
+	padding: 7px 7px 7px 20px;
+	border: 2px solid #f7f7f7;
+	color: grey;
+}
+
+.header input:focus{
+	border: 1px solid #f7f7f7;
+	outline: none;
+	background-color: #F5F5F5;
+}
+
+.theme{
+	background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+	border-radius: 5px;
+	color: white;
+	border: none;
+	font-size: 18px;
+	padding: 5px 15px;
+    text-align: center;
+	height: 30px;
+	
+}
+
+.theme:focus{
+	outline: none;
+}
+
+.theme:hover{
+    opacity: 0.7;
+}
+
+.footer{
+	background-color: #f7f7f7;
+}
+
+.cancel{
+	background:  #324370;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+    
+}
+
+.cancel:focus{
+	outline: none;
+	cursor: pointer;
+}
+
+.cancel:hover {
+    outline: none;
+	background: #050e31;
+}
+
+
+.next{
+	background-color: #2ecc71;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+}
+
+.next:focus{
+	outline: none;
+	cursor: pointer;
+}
+
+.next:hover {
+    outline: none;
+	background: #009430;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: orangered;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    padding: 5px 15px;
+    font-size: 16px;
+    
+  }
+  
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f7f7;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: white;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+                                color: white;
+}
+
+.dropbtn:focus { outline: none;}
