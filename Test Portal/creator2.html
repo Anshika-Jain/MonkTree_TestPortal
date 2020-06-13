@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Creator</title>
+	<script type="text/javascript" src="./js/lib/jquery-2.1.4.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/C2style.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbaricons">
+            <ul>
+                <li id="icon1">Tarun <span id="caste">DIXIT</span><span id="namenot"><img src="Images/Ellipse%2045.png"></span></li>
+                <li id="icon2"><button id="button1"><img src="Images/icons8-gear-100.png" id="gear"></button></li> 
+                <li id="icon3"><button id="button2"><img src="Images/icons8-notification-100.png" id="bell"></button><span id="bellnot"><img src="Images/Ellipse%2045.png"></span></li> 
+                <li id="icon4"><button id="button3"><img src="Images/icons8-logout-rounded-down-100.png" id="logout"></button></li> 
+            </ul>
+
+        </div>
+    </div>
+    <div id="sidebar">
+        <img id="brandname" src="Images/monktree%20white.png">
+        <div id="list1">
+            <ul>
+                <li><a href="./creator1.html"><i class="fa fa-plus-circle"></i> Create a test</a></li>
+                <li><a href="./view.html"><i class="fa fa-list-alt"></i> View Tests</a></li>
+                <li><a href="./results.html"><i class="fa fa-signal"></i>  Results</a></li>
+            </ul>
+        </div>
+
+        <hr id="hrline">
+        
+        <div id="list2">
+            <ul>
+                <li><a href="#">Discussion</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Report</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="container">
+		<div id="finalbuttons">
+			<a href="./view.html"><button type="button" class="exittest">Exit</button></a>
+			<a href="./view.html"><button type="button" class="savetest">Save Test</button></a>
+		
+	    </div>
+        <div id="creator">
+        <h1>Questions<i class="fa fa-plus"></i></h1>
+		<ol>
+			<li>
+				<div id="node-blank">
+				<div class="ques">
+					<input type="text" placeholder="Write your question here"><button type="button" class="ques-clear">CLR</button>
+				</div>	
+					<div class="options">
+						<ol>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 1"> 
+								 <button type="button" class="clear">CLR</button> 
+								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 2"> 
+								 <button type="button" class="clear">CLR</button>
+								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 3">
+								 <button type="button" class="clear">CLR</button> 
+								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 4"> 
+								 <button type="button" class="clear">CLR</button> 
+								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							</li><br>
+						</ol>
+						<button type="button" class="add"> Add Answer Option </button>
+					</div>
+					<div class="footer">
+						<button type="button" class="delete-blank"><i class="fa fa-trash"></i> DEL</button>
+						<button type="button" class="save"><i class="fa fa-save"></i> Save</button>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div id="node">
+				<div class="ques">
+					<input type="text" id="ques" placeholder="Write your question here" value="What is 2+4 ?"><button type="button" class="ques-clear">CLR</button>
+				</div>	
+					<div class="options">
+						<ol>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 1" value="3"> 
+								 <button type="button" class="clear">CLR</button> 
+								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 2" value="9"> 
+								 <button type="button" class="clear">CLR</button>
+								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle active"></i></span>
+								 <input type="text" placeholder="Answer option 3" value="6">
+								 <button type="button" class="clear">CLR</button> 
+								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							</li><br>
+							<li><span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" placeholder="Answer option 4" value="7"> 
+								 <button type="button" class="clear">CLR</button> 
+								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							</li><br>
+						</ol>
+						<button type="button" class="add"> Add Answer Option </button>
+					</div>
+					<div class="footer">
+						<button type="button" class="delete"><i class="fa fa-trash"></i> DEL</button>
+						<button type="button" class="save"><i class="fa fa-save"></i> Save</button>
+					</div>
+				</div>
+			</li>
+        </ol>
+    </div>
+    </div>
+    <script type="text/javascript" src="./js/C2script.js"></script>
+</body>
+</html>
