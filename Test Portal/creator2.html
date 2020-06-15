@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Test Creator</title>
-	<script type="text/javascript" src="./js/lib/jquery-2.1.4.min.js"></script>
+	
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/C2style.css">
+	<link rel="stylesheet" type="text/css" href="css/Cstyle.css">
 </head>
 <body>
     <div id="navbar">
@@ -41,7 +41,7 @@
         </div>
 
     </div>
-    <div id="container">
+    <div id="container2">
 		<div id="finalbuttons">
 			<a href="./view.html"><button type="button" class="exittest">Exit</button></a>
 			<a href="./view.html"><button type="button" class="savetest">Save Test</button></a>
@@ -49,44 +49,50 @@
 	    </div>
         <div id="creator">
         <h1>Questions<i class="fa fa-plus"></i></h1>
-		<ol>
-			<li>
-				<div id="node-blank">
-				<div class="ques">
-					<input type="text" placeholder="Write your question here"><button type="button" class="ques-clear">CLR</button>
-				</div>	
+			<div id="node-blank">
+					<div class="ques">
+						<input type="text" id="question" placeholder="Write your question here">
+						
+					</div>	
 					<div class="options">
-						<ol>
-							<li><span><i class="fa fa-check-circle"></i></span>
-								 <input type="text" placeholder="Answer option 1"> 
-								 <button type="button" class="clear">CLR</button> 
-								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+						<ul class="optns">
+							<li >
+								<span><i class="fa fa-check-circle"></i></span>
+								 <input type="text" id="opt1" placeholder="Answer option 1"> 
+								
+								 
 							</li><br>
-							<li><span><i class="fa fa-check-circle"></i></span>
-								 <input type="text" placeholder="Answer option 2"> 
-								 <button type="button" class="clear">CLR</button>
-								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							<li >
+								<span><i class="fa fa-check-circle"></i></span>
+								 <input type="text"  id="opt2"  placeholder="Answer option 2"> 
+								 
 							</li><br>
-							<li><span><i class="fa fa-check-circle"></i></span>
-								 <input type="text" placeholder="Answer option 3">
-								 <button type="button" class="clear">CLR</button> 
-								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							<li>
+								<span><i class="fa fa-check-circle"></i></span>
+								 <input type="text"  id="opt3"  placeholder="Answer option 3">
+								
 							</li><br>
-							<li><span><i class="fa fa-check-circle"></i></span>
-								 <input type="text" placeholder="Answer option 4"> 
-								 <button type="button" class="clear">CLR</button> 
-								 <span id="trash"><i class="fa trash fa-trash"></i></span>
+							<li>
+								<span><i class="fa fa-check-circle"></i></span>
+								 <input type="text"  id="opt4"   placeholder="Answer option 4"> 
+								
 							</li><br>
-						</ol>
-						<button type="button" class="add"> Add Answer Option </button>
+						</ul>
+						<!--<button type="button" class="add"> Add Answer Option </button>-->
 					</div>
 					<div class="footer">
-						<button type="button" class="delete-blank"><i class="fa fa-trash"></i> DEL</button>
+						<button type="button" class="delete-blank"><i class="fa fa-trash"></i> Reset</button>
 						<button type="button" class="save"><i class="fa fa-save"></i> Save</button>
 					</div>
 				</div>
-			</li>
-			<li>
+			<h1>Test Questions</h1>	
+			<div id="node-list">
+				<ol class="node-list">
+	
+				</ol>
+			</div>
+			
+			<!--<li>
 				<div id="node">
 				<div class="ques">
 					<input type="text" id="ques" placeholder="Write your question here" value="What is 2+4 ?"><button type="button" class="ques-clear">CLR</button>
@@ -121,10 +127,13 @@
 						<button type="button" class="save"><i class="fa fa-save"></i> Save</button>
 					</div>
 				</div>
-			</li>
+			</li>-->
         </ol>
     </div>
     </div>
-    <script type="text/javascript" src="./js/C2script.js"></script>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	
+	<script type="text/javascript" src="./js/C2script.js"></script>
 </body>
 </html>
