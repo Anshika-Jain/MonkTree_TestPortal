@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Test Creator</title>
-	<script type="text/javascript" src="assets/js/lib/jquery-2.1.4.min.js"></script>
+	
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/C1style.css">
+	<link rel="stylesheet" type="text/css" href="css/Cstyle.css">
 </head>
 <body>
     <div id="navbar">
@@ -41,34 +41,38 @@
         </div>
 
     </div>
-    <div id="container">
+    <div id="container1">
         <div id="box">
             <div class="header">
+            <form action="">
             <ol>
                 <li>Name this Test
                     <br>
-                    <input type="text" placeholder="Test name">
+                    <input type="text" id="testname" placeholder="Test name" required>
                 </li>
                 <br>
                 <li>Choose the theme
                     <br><br>
+                <ul>
                     <button type="button" class="theme">Physics</button>
                     <button type="button" class="theme">Chemistry</button>
                     <button type="button" class="theme">Mathematics</button>
+                </ul>
                 </li>
                 <br>
-                <li>Default time for each question
+                <li>
+                   
+                    <label for="time">Default time for each question</label>
                     <br><br>
-                    <div class="dropdown">
-                        <button class="dropbtn"> 30 secs</button>
-                        <div class="dropdown-content">
-                          <a href="#">10 seconds</a>
-                          <a href="#">20 seconds</a>
-                          <a href="#">30 seconds</a>
-                          <a href="#">1 minute</a>
-                          <a href="#">5 minutes</a>
-                        </div>
-                      </div>
+                    <select id="time">
+                        <option value="10">10 seconds</option>
+                        <option value="20">20 seconds</option>
+                        <option value="30">30 seconds</option>
+                        <option value="1">1 minute</option>
+                        <option value="5">5 minutes</option>
+                    </select>
+
+                   
                 </li>
                 <br>
                 <li>Score for each question
@@ -76,6 +80,8 @@
                     <input type="text" placeholder="Score">
                 </li>
             </ol>
+            <!--<input type="submit" value="Save" class="info">-->
+            </form>
             </div>
             <div class="footer">
                 
@@ -85,6 +91,8 @@
             </div>
         </div>
     </div>
-    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	
+	<script type="text/javascript" src="./js/Cscript.js"></script> 
 </body>
 </html>
