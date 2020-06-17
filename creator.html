@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Creator</title>
+    <!---Google Font link-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+
+    <!--Font awesome link-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+
+      <!---CSS file-->
+    <link rel="stylesheet" type="text/css" href="css/creator.css">  
+
+</head>
+<body>
+    <!--Navbar-->
+    <div id="navbar">
+        <div id="navbaricons">
+            <ul>
+                <li id="icon1">Tarun <span id="caste">DIXIT</span><span id="namenot"><img src="images/Ellipse%2045.png"></span></li>
+                <li id="icon2"><button id="button1"><img src="images/icons8-gear-100.png" id="gear"></button></li> 
+                <li id="icon3"><button id="button2"><img src="images/icons8-notification-100.png" id="bell"></button><span id="bellnot"><img src="images/Ellipse%2045.png"></span></li> 
+                <li id="icon4"><button id="button3"><img src="images/icons8-logout-rounded-down-100.png" id="logout"></button></li> 
+            </ul>
+
+        </div>
+    </div>
+
+
+    <!--SideBar-->
+    <div id="sidebar">
+        <img id="brandname" src="Images/monktree%20white.png">
+        <div id="list1">
+            <ul>
+                <li><a href="./creator.html"><i class="fa fa-plus-circle"></i> Create a test</a></li>
+                <li><a href="./view.html"><i class="fa fa-list-alt"></i> View Tests</a></li>
+                <li><a href="./results.html"><i class="fa fa-signal"></i>  Results</a></li>
+            </ul>
+        </div>
+
+        <hr id="hrline">
+        
+        <div id="list2">
+            <ul>
+                <li><a href="#">Discussion</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Report</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+<div id="container">
+    <!--Information Node-->
+    <div id="info-blank">
+        <form id="infoblank" name="infoblank">
+        <div class="infoheader">   
+            <p>Name this Test</p>
+            <input type="text" placeholder="Test Name" id="testname" name="testname">
+            <p>Choose the theme</p>
+                <select id="theme-dd"> 
+                    <option value="Physics">Physics</option> 
+                    <option value="Chemistry">Chemistry</option> 
+                    <option value="Maths">Maths</option> 
+                </select>
+            
+
+            <p>Score for each question</p>
+            <input type="text" placeholder="Score(In Digits)" id="score" name="score">
+            <p>Default time for each question</p>
+                <select id="time-dd"> 
+                    <option value="0.5">30 Seconds</option> 
+                    <option value="1">1 Minute</option> 
+                    <option value="2">2 Minutes</option> 
+                    <option value="5">5 Minutes</option> 
+                </select>
+            <br><br>
+        </div> 
+        <div class="infofooter">
+           <input type="button" value="Next" class="next" onclick="Saveinfo();">
+            <input type="button" value="Cancel" class="cancel" onclick="cancel();">
+        </div>    
+        </form>
+   </div>
+
+   <!--Question Node-->
+    <div id="node-blank"   style="visibility: hidden;">
+    <form id="nodeblank" name ="nodebalnk">
+    <h1 class="heading1">Questions</h1>
+    <div class="node">
+        <div class="nodeheader">
+        <h5 id="queno">Question 1.</h5>
+        <input type="text" placeholder="Write your question here" class="ques" id="ques" name="ques"><input type="button" class="quesclear" value="CLR" onclick="clearques();"><br>
+        <br>
+        <input type="text" placeholder="Answer Option 1" id="opt1" class="opt" name="opt1"><input type="button" class="clear" value="CLR" onclick="clearopt1();"><br>
+        <input type="text" placeholder="Answer Option 2" id="opt2" class="opt" name="opt2"><input type="button" class="clear" value="CLR" onclick="clearopt2();"><br>
+        <input type="text" placeholder="Answer Option 3" id="opt3" class="opt" name="opt3"><input type="button" class="clear" value="CLR" onclick="clearopt3();"><br>
+        <input type="text" placeholder="Answer Option 4" id="opt4" class="opt" name="opt4"><input type="button" class="clear" value="CLR" onclick="clearopt4();"><br>
+        <br>
+        <input type="text" placeholder="Answer"   id="ans"  class="ans"  name="ans"><input type="button" class="clear" value="CLR" onclick="clearans();"><br>
+        </div>
+        <div class="nodefooter">
+        <input type="button" value="Reset" class="reset" onclick="Resetinfo();">
+        <input type="button" value="Next" class="savenode" onclick="Savenode();">
+        </div>
+        <div id="savetestbtn" style="visibility: hidden;">
+        <p>You have filled all questions.</p>
+        <input type="button" class="savetestbtn" value="Save Test" onclick="Savetest();">
+        </div>
+    </div>
+    </form>
+    </div>
+
+    <!--Question List-->
+    <div id="node-list" style="visibility: hidden;">
+    <h1 id="TName" style="text-align: center;"></h1>
+        <div class="information">
+        <h3 id="Ttheme"></h3>
+        <h4 id="totaltime" style=" font-weight: 100;"></h4>
+        <h4 id="totalscore" style=" font-weight: 100;"></h4>
+        </div>
+        
+        <div class="nodelist">
+        <h1 class="quescss" id="question1"></h1>
+        <ul>
+        <li><h5 class="optcss" id="1option1"></h5></li><br>
+        <li><h5 class="optcss" id="1option2"></h5></li><br>
+        <li><h5 class="optcss" id="1option3"></h5></li><br>
+        <li><h5 class="optcss" id="1option4"></h5></li><br>
+        </ul>
+        <h5 class="anscss" id="1answer"></h5><br>
+        </div>
+        
+        <div class="nodelist">
+        <h1 class="quescss" id="question2"></h1>
+        <ul>
+        <li><h5 class="optcss" id="2option1"></h5></li><br>
+        <li><h5 class="optcss" id="2option2"></h5></li><br>
+        <li><h5 class="optcss" id="2option3"></h5></li><br>
+        <li><h5 class="optcss" id="2option4"></h5></li><br>
+        </ul>
+        <h5 class="anscss" id="2answer" ></h5><br>
+        </div>  
+
+        <div class="nodelist">
+        <h1 class="quescss" id="question3"></h1>
+        <ul>
+        <li><h5 class="optcss" id="3option1"></h5></li><br>
+        <li><h5 class="optcss" id="3option2"></h5></li><br>
+        <li><h5 class="optcss" id="3option3"></h5></li><br>
+        <li><h5 class="optcss" id="3option4"></h5></li><br>
+        </ul>
+        <h5 class="anscss" id="3answer" ></h5><br>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+     <!---JS File link-->
+     <script type="text/javascript" src="js/creator.js"></script> 
+  
+
+    <!---Jquery-->    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,619 @@
+html{
+    background-color: #f5f5f5;
+   
+}
+
+body{
+    font-family: Roboto;
+}
+
+/**************************************************navbar*****************************************************************************/
+
+#navbar{
+    height: 50px;
+    width: 1700px;
+    background-color: white;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    box-shadow: 1px 1px 12px 1px grey;
+}
+
+#navbaricons{
+    position: absolute;
+    left: 1235.1px;
+    top: -40px;
+}
+
+#navbaricons ul li{
+    display: inline;
+    border-right: 1px solid grey;
+}
+
+#button1{
+    width: 45px;
+    height: 44px;
+    position: relative;
+    background-color: white;
+    border: 1px;
+    padding-left: 0px;
+    left: -9px;
+    top: 23px;
+    margin-right: 2px;
+    
+}
+#button1:hover{
+    cursor: pointer;
+}
+
+#caste{
+    margin-right: 13px;
+    font-weight: bold;
+}
+
+#button2{
+    width: 45px;
+    height: 40px;
+    position: relative;
+    top: 19px;
+    left: -4px;
+    background-color: white;
+    border: 1px;
+    margin: none;
+    padding-left: 0px;
+    
+}
+#button2:hover{
+    cursor: pointer;
+
+}
+#button3{
+    width: 45px;
+    height: 43px;
+    position: relative;
+    top: 17px;
+    background-color: white;
+    border: 1px;
+    margin: none;
+    padding-left: 0px;
+    
+}
+#button3:hover{
+    cursor: pointer;
+}
+#gear{
+    width: 55px;
+    height: 55px;
+}
+#bell{
+    width: 50px;
+    height: 45px;
+    
+}
+#logout{
+    width: 45px;
+    height:45px;
+
+}
+#bellnot{
+    position: absolute;
+    left: 225px;
+    top: 44px;
+    z-index: 2;
+    
+}
+#namenot{
+    position: absolute;
+    top: 45px;
+    left: 115px;
+    z-index: 2;
+    
+}
+
+#icon2{
+    margin-left: 5px
+}
+#icon3{
+    margin-right: 5px
+}
+
+/**************************************************Sidebar*****************************************************************************/
+
+#sidebar{
+    position: relative;
+    width: 300px;
+    height: 1000px;
+    background-color: #324370;
+    z-index: 2;
+    top: -60px;
+    left: -8px;
+    
+}
+
+#brandname{
+    width: 160px;
+    height: 36px;
+    position: absolute;
+    left: 60px;
+    top: 80px
+    
+}
+
+#list1{
+    position: absolute;
+    top: 150px;
+    left: -70px
+   
+}
+
+#list1 ul{
+    list-style: none;
+    
+}
+
+#list1 ul li{
+    margin-bottom: 15px;
+    width: 320px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+       
+}
+
+ #list1 ul li a{
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+     font-family: roboto;
+     font-size: 15px;
+     display: block;
+      
+ }
+ #list1 ul li:hover{
+     background: linear-gradient(to left ,#FF0A71,#FFB906);
+ }
+
+ #hrline{
+    position: absolute;
+    top: 350px;
+    width: 298px;
+}
+
+#list2{
+    position: absolute;
+    top: 400px;
+    left: -70px
+    
+}
+#list2 ul{
+    list-style: none;
+}
+#list2 ul li{
+    margin-bottom: 15px;
+    width: 320px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    
+   
+}
+
+#list2 ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: roboto;
+    font-size: 15px;
+    display: block;
+     
+}
+#list2 ul li:hover{
+    background: linear-gradient(to left ,#FF0A71,#FFB906);
+}
+
+/**************************************************Container*****************************************************************************/
+#container{
+    position: relative;
+    width: 1235px;
+    height: 690px;
+    left: 294px;
+    bottom: 1000px;
+    
+}
+
+
+/**************************************************Info Node*****************************************************************************/
+#info-blank {
+	width: 700px;
+	height: auto;
+    margin: 100px auto;
+ 	background-color: white;
+	box-shadow: 1px 1px 20px 4px #acacbd;
+}
+
+.infoheader{
+     padding: 25px 25px 25px 50px;
+}
+
+.infoheader p{
+    font-size: 16px;
+}
+
+.infoheader input{
+	font-size: 15px;
+	box-sizing: border-box;
+	padding: 7px 7px 7px 20px;
+	border: 2px solid #f7f7f7;
+	color: grey;
+}
+
+.infoheader input:focus{
+	border: 1px solid #f7f7f7;
+	outline: none;
+	background-color: #F5F5F5;
+}
+
+.infoheader select {
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    color: white;
+    background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+    border:none;
+    padding: 7px 7px 7px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+.infoheader select:focus{
+    outline: none;
+}
+
+.infoheader select:hover{
+    opacity: 0.7;
+}
+
+.infoheader option{
+    background-color: white;
+    color: grey;
+   
+}
+
+
+.infofooter{
+    background-color: #f7f7f7;
+    height: 35px;
+}
+
+.cancel{
+	background:  #324370;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+    
+}
+
+.cancel:focus{
+	outline: none;
+	cursor: pointer;
+}
+
+.cancel:hover {
+    outline: none;
+	background: #050e31;
+}
+
+.next{
+	background-color: #2ecc71;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+}
+
+.next:focus{
+	outline: none;
+	cursor: pointer;
+}
+
+.next:hover {
+    outline: none;
+	background: #009430;
+}
+
+/**************************************************Question Node*****************************************************************************/
+
+#node-blank{
+    width: 760px;
+    height: 500px;
+    margin: 70px auto;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+    position: relative;
+    
+}
+
+.node{
+    width: 700px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+}
+
+.heading1 , #TName {
+    background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal; 
+    
+}
+
+
+.nodeheader{
+    padding: 15px 25px 25px 50px;
+    
+}
+
+#queno{
+    color: grey;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+
+.ques{
+    width: 92%;
+    border: 2px solid #f7f7f7;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 13px 13px 13px 20px;
+    color: grey;
+    
+}
+
+.ques:focus{
+    border: 1px solid #f7f7f7;
+    outline: none;
+    background-color: #F5F5F5;
+}
+
+.opt {
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 7px 7px 20px;
+    border: 2px solid #f7f7f7;
+    color: grey;
+    
+}
+
+.opt:focus{
+    border: 1px solid #f7f7f7;
+    outline: none;
+    background-color: #F5F5F5;
+}
+
+.ans {
+   
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 7px 7px 20px;
+    border: 2px solid #f7f7f7;
+    color: #009432;
+    background: #C8E6C9;
+}
+
+.ans::placeholder{
+    color: #009432;
+}
+
+.ans:focus{
+    border: 1px solid #f7f7f7;
+    outline: none;
+    background-color: #F5F5F5;
+    color: #009432;
+    background: #E8F5E9;
+}
+
+
+
+.quesclear , .clear{
+    width: 6%; 
+    background-color: #dcdde1;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.quesclear{
+    height: 40px;
+}
+.quesclear:focus , .clear:focus{
+    outline: none;
+}
+
+.quesclear:hover , .clear:hover {
+    outline: none;
+    background: #a4b0be;
+}
+
+.nodefooter{
+    background-color: #f7f7f7;
+    height: 37px;
+}
+
+.reset {
+    background:  #324370;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+    
+}
+
+.reset:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+.reset:hover  {
+    outline: none;
+    background: #050e31;
+}
+
+.savenode{
+    background: #2ecc71;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    float: right;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+}
+
+.savenode:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+.savenode:hover {
+    outline: none;
+    background: #009430;
+}
+
+#savetestbtn{
+     position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: grey;
+  font-size: 25px;
+  text-align: center;
+}
+
+.savetestbtn{
+    background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+    border-radius: 5px;
+    color: white;
+    font-size: 28px;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 3px;
+    
+}
+
+.savetestbtn:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+.savetestbtn:hover {
+    outline: none;
+    opacity: 0.7;
+}
+
+
+/**************************************************Question List*****************************************************************************/
+
+#node-list{
+    width: 760px;
+    height: auto;
+    margin: 70px auto;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+    position: relative;
+
+}
+
+.information{
+    width: 650px;
+    height: 150px;
+    margin: 20px auto;
+    background-color:  #324370;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+    padding: 10px 25px 10px 25px;
+   
+
+}
+
+.nodelist{
+    width: 650px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 1px 1px 20px 4px #acacbd;
+    padding: 15px 15px 25px 15px;
+}
+
+.quescss{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background: linear-gradient(to bottom left, #FF006F, #FFCC00);
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.nodelist ul{
+    line-height: 85%;
+}
+
+.nodelist li{
+    list-style: circle;
+    color: grey;
+}
+
+
+.optcss{
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 40px 7px 40px;
+    color: grey;
+    background-color: #F5F5F5;
+    margin: 0;
+    width: fit-content;
+    margin-left: 40px;
+}
+
+.anscss{
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 40px 7px 40px;
+    color: #009432;
+    background-color: #C8E6C9;
+    margin: 0;
+    width: fit-content;
+    float: right;
+    margin-right: 30px;
+}
